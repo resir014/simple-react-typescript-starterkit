@@ -83,9 +83,7 @@ const config: webpack.Configuration = {
   entry: {
     main: [
       path.join(APP_DIR, 'index.tsx')
-    ].concat(__DEV__
-      ? `webpack-hot-middleware/client.js?path=/__webpack_hmr`
-      : [])
+    ]
   },
   output: {
     path: BUILD_DIR,
